@@ -1,9 +1,11 @@
 Instructions!
 
-1. Make a new branch using main as your template
-    - branch name should be `firstname-lastname/month-YYYY` i.e., `zaviar-brown/June-2023`
-    - `git checkout main`
-    - `git pull`
-    - `git checkout -b {your branch name}`
-    - `git push -u origin {your branch name}`
-2. Use it to provide lecture notes to your cohort :)
+1. Navigate to your home directory.
+    - `cd`
+2. Clone this repository and name it whatever you want, in this case we will call it aa-notes.
+    - `git clone https://github.com/appacademy/pt-section-2-resources.git aa-notes`
+3. Checkout the `student-template` branch.
+    - `git checkout student-template`
+4. Delete the `.git` folder.
+    - `rm -rf .git`
+5. You now have a local folder structure to handle all of your aa related notes, practices, and homework!
