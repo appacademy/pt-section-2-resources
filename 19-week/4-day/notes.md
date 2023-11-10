@@ -68,22 +68,22 @@ SPACES='must be in quotes'
 
 Let's say we are using environment variables for username and password values for a user to login with. Those values should be different depending on the environment we're in.
 
--   Testing - Values are set to test the constraints of our login & signup functions. You might want to check:
-    -   Does a password with special characters throw an error?
-    -   Can an account get created with a username that already exists?
--   Staging/Development - Values are set to work on a particular piece of functionality. You might be developing:
-    -   The admin control page, so your Values are set to an admin's account.
-    -   A new user's welcome screen, so your Values are set to a brand new account.
--   Production - Values are empty and are instead supplied by a user when they log in/sign up
+- Testing - Values are set to test the constraints of our login & signup functions. You might want to check:
+  - Does a password with special characters throw an error?
+  - Can an account get created with a username that already exists?
+- Staging/Development - Values are set to work on a particular piece of functionality. You might be developing:
+  - The admin control page, so your Values are set to an admin's account.
+  - A new user's welcome screen, so your Values are set to a brand new account.
+- Production - Values are empty and are instead supplied by a user when they log in/sign up
 
 This is not an exact use case for environment variables, but they are used in a similar way to this. We will get a better understanding of how they are used once we learn databases. The databases will be what our passwords are for, not a user.
 
 ## Why else are they useful?
 
--   We can store info in them that never leaves our machine
-    -   This easily allows multiple developers to have different values for each environment variable
-    -   Must use .gitignore to ensure this happens
--   Accessible from anywhere in our app
+- We can store info in them that never leaves our machine
+  - This easily allows multiple developers to have different values for each environment variable
+  - Must use .gitignore to ensure this happens
+- Accessible from anywhere in our app
 
 ```js
 process.env; // holds all our environment variables
@@ -123,7 +123,7 @@ PASSWORD=YouWillNeverKnow
 
 There's two ways to access these values:
 
--   `npm install dotenv`
+- `npm install dotenv`
 
 ```js
 // in whatever file you want to use the .env variables
@@ -136,7 +136,7 @@ console.log(process.env.MUSIC); // lofi
 console.log(process.env.PASSWORD); // YouWillNeverKnow
 ```
 
--   `npm install dotenv-cli` (my preferred method)
+- `npm install dotenv-cli` (my preferred method)
 
 ```md
 # in the terminal, no require() required!
