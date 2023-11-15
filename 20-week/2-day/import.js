@@ -1,3 +1,7 @@
-const { val1, val2 } = require("./scratch");
+// const { val1, val2 } = require("./scratch");
 
-console.log(val1, val2);
+// console.log(val1, val2);
+
+const val2 = require("./scratch");
+
+console.log(val2);
