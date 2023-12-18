@@ -121,4 +121,5 @@ GET /static/images/doggo.jpg
 
 Set them up and use them! It will help with your daily stand-ups that will be happening when we get back from the break
 
+- The cards have already been made for you! Just copy and paste!
 - They give you quick visibility into the progress of your tasks
