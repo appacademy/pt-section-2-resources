@@ -14,8 +14,8 @@
 - Curly braces in JSX indicate regular JavaScript code that should be evaluated
 
 ```jsx
-firstLink="/pets";
-showLink = false;
+const firstLink = "/pets";
+const showLink = false;
 
 const navList = (
   <ul>
