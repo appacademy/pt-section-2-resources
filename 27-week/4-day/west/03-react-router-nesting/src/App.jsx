@@ -2,6 +2,8 @@ import { createBrowserRouter, RouterProvider, NavLink, Outlet } from 'react-rout
 import Home from './components/Home';
 import Stocks from './components/Stocks';
 import Movies from './components/Movies';
+import MovieDetails from './components/MovieDetails';
+import { movies } from "./data/movieData";
 
 function Layout() {
   return (
@@ -19,8 +21,8 @@ function Layout() {
             </NavLink>
           </li>
           <li>
-            <NavLink 
-              to='/stocks' 
+            <NavLink
+              to='/stocks'
               className={({isActive}) => isActive? 'purple' : ''}
               style={({isActive}) => isActive? { fontWeight: 'bold' } : {}}
             >
@@ -46,7 +48,7 @@ function Layout() {
 }
 
 const router = createBrowserRouter([
-  { 
+  {
     element: <Layout />,
     children: [
       {
@@ -59,7 +61,13 @@ const router = createBrowserRouter([
       },
       {
         path: 'movies',
-        element: <Movies />
+        element: <Movies movies={movies}/>,
+        children: [
+          {
+            path: ":movieId",
+            element: <MovieDetails movies={movies} />
+          }
+        ]
       },
       {
         path: '*',
