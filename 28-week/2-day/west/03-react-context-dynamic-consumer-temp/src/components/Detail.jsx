@@ -1,8 +1,8 @@
-import { useContext } from 'react';
-import { HoroscopeContext } from '../context/HoroscopeContext';
+import { useHoroscopeContext } from '../context/HoroscopeContext';
+import Match from './Match';
 
 const Detail = () => {
-  const { sign } = useContext(HoroscopeContext);
+  const { sign } = useHoroscopeContext();
 
   return (
     <div className='details'>
@@ -10,6 +10,7 @@ const Detail = () => {
       <h2>{sign.name}</h2>
       <h4>Element: {sign.element}</h4>
       <h4>Traits: {sign.traits}</h4>
+      <Match />
     </div>
   );
 };
