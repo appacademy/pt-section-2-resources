@@ -74,7 +74,7 @@ Using an `IN`:
 ```sql
 SELECT * FROM pets; -- "dog", "cat", "parrot", "turtle", "goat"
 
-SELECT * FROM toys WHERE pet_type IN ("dog", "cat", "parrot", "turtle", "goat")
+SELECT * FROM toys WHERE pet_type IN ("dog", "cat", "parrot", "turtle", "goat");
 ```
 
 Using a subquery:
