@@ -1,0 +1,5 @@
+SELECT * FROM puppies
+WHERE id in (1,2,3)
+ORDER BY 
+LIMIT
+OFFSET
