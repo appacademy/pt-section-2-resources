@@ -19,7 +19,7 @@ userId: {
     model: 'Users', // the TABLE name, not Model name
     key: 'id', // the column on the other Table
   },
-	onDelete: 'CASCADE'
+  onDelete: 'CASCADE'
 };
 ```
 
@@ -315,7 +315,7 @@ When creating the new data, we can create any associated data at the same time
 ```js
 await Person.create({
   name: "Exa Mple",
-  Jobs: [{ title: "Manager"}, {title: "Software Engineer" }],
+  Jobs: [{ title: "Manager" }, { title: "Software Engineer" }],
 });
 ```
 
