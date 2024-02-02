@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { loadArticles } from '../../store/articleReducer';
+import { loadArticles, allArticlesSelector } from '../../store/articleReducer';
 
 const ArticleList = () => {
   const dispatch = useDispatch();
-  const articles = useSelector(state=>state.articleState.entries);
+  const articles = useSelector(allArticlesSelector);
 
   useEffect(() => {
     dispatch(loadArticles());

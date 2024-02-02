@@ -1,14 +1,24 @@
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
+import { useDispatch } from "react-redux";
+import { addArticle } from '../../store/articleReducer';
 import './ArticleInput.css';
 
 const ArticleInput = () => {
+  const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const [imageUrl, setImageUrl] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const article = {
+      id: nanoid(),
+      title,
+      body,
+      imageUrl
+    }
+    dispatch(addArticle(article))
     reset();
   };
 

@@ -1,11 +1,15 @@
-import articles from '../data/data.json';
+import articles from "../data/data.json";
 
-const LOAD_ARTICLES = 'article/loadArticles';
+export const allArticlesSelector = (state) => state.articleState.entries;
+export const articleByIdSelector = (id) => (state) =>
+  state.articleState.entries.find((artObj) => artObj.id === id);
+
+const LOAD_ARTICLES = "article/loadArticles";
 
 export const loadArticles = () => {
   return {
     type: LOAD_ARTICLES,
-    articles
+    articles,
   };
 };
 
