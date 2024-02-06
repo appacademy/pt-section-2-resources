@@ -1,4 +1,5 @@
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
+import thunk from "redux-thunk";
 import fruitReducer from './fruitReducer';
 import articleReducer from './articleReducer';
 
@@ -33,7 +34,9 @@ if (import.meta.env.MODE !== "production") {
   const logger = (await import("redux-logger")).default;
   const composeEnhancers =
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-  enhancer = composeEnhancers(applyMiddleware(logger));
+  enhancer = composeEnhancers(applyMiddleware(thunk, logger));
+} else {
+  enhancer = applyMiddleware(thunk);
 }
 
 /*
