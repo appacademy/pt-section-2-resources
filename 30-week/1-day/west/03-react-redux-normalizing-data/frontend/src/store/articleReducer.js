@@ -1,3 +1,5 @@
+import { createSelector } from "reselect";
+
 const LOAD_ARTICLES = "article/loadArticles";
 const ADD_ARTICLE = "article/addArticle";
 
@@ -35,6 +37,10 @@ export const writeArticle = (payload) => async (dispatch) => {
   }
 };
 
+const selectArticles = (state) => state.articleState.entries;
+export const selectArticlesArray = createSelector(selectArticles, (articles) => Object.values(articles));
+export const selectArticleById = (id) => (state) => state.articleState.entries[id];
+
 const initialState = { entries: {}, isLoading: true };
 
 const articleReducer = (state = initialState, action) => {
@@ -47,7 +53,7 @@ const articleReducer = (state = initialState, action) => {
       return newState;
     }
     case ADD_ARTICLE:
-      return { ...state, entries: [...state.entries, action.article] };
+      return { ...state, entries: {...state.entries, [action.article.id]: action.article} };
     default:
       return state;
   }
