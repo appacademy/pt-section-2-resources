@@ -8,11 +8,12 @@
   - Admin & User: Delete own comments
   - Admin: Delete other comments
 
+- Director vs Actor vs Editor vs Camera Operator
+- Kings vs Lords vs Dukes vs Plebs
+- Trainers vs PokePals
 - Server vs Customer vs Chef
-- Creator vs Follower
-- Manager vs Employee
 - Seller vs Buyer
-- Govt' vs Pleb
+- Govt's vs Plebs
 
 ## Model Scoping
 
@@ -153,5 +154,6 @@ Now if we wanted this to be more programmatic, we could write a function instead
 We would invoke this using this syntax
 
 ```js
-await Cat.scope({ method: ["isColor", "orange"] }).findAll();
+await Cat.scope({ method: ["isColor", "orange"] }).findAll(); // these are the exact same query
+await Cat.findAll({ where: { color: "orange" } }); // these are the exact same query
 ```
