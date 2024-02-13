@@ -39,6 +39,6 @@
 ## Some helpful resources
 
 - [GitHub’s Basic Formatting Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-- [My group project’s repo](https://avail-table.herokuapp.com)
+- [My group project’s repo](https://github.com/fxuls/open-table-clone)
   - Requirements have changed since I was a student
   - Don't copy this 1-to-1, use only for inspiration
