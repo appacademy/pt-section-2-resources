@@ -110,9 +110,9 @@ print_names_and_countries("Hi",
 
 ### Collections
 
-- Unordered data type
+- Hashed data type
 - Can't use indexes, we use keys instead
-- Includes: dictionaries and sets
+- Includes: dictionaries(secretly ordered under the hood as of Python v3.7) and sets(unordered)
 
 ### Iterables
 
