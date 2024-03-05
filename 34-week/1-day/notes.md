@@ -21,7 +21,7 @@ print(sorted_names)
 
 # ensure a case-insensitive sort with the `.lower` string method
 # and sort in reverse order
-sorted_names = sorted(names, key=str.lower(), reverse=True)
+sorted_names = sorted(names, key=lambda x: x.lower(), reverse=True)
 print(sorted_names)
 ```
 
