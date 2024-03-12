@@ -1,0 +1,2 @@
+FLASK_APP=gregs_app
+FLASK_DEBUG=True
