@@ -4,25 +4,22 @@ const app = express();
 
 app.use(express.json());
 
-let myMiddleWare = (req, res, next) => {
-  console.log("I'm some middleware");
+let foodCheckingMiddleware = (req, res, next) =>{
+ console.log(req.params)
+if (req.params.food !== "taco"){
+  res.send("That's not a taco")
+}
   next()
-};
+}
 
-app.use(myMiddleWare)
 
-let myMiddleWare2 = (req, res, next) => {
-    res.status(404)
-    console.log("I'm some middleware");
-    next()
-  };
 
-app.use(myMiddleWare2)
+app.get("/:food", foodCheckingMiddleware, (request, response) =>{
+  let {food} = request.params
+  response.json({food: food})
+})
 
-app.get("/", (request, response) => {
 
-  response.send("cool");
-});
 
 let port = 3000;
 
