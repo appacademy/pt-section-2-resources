@@ -42,6 +42,6 @@
   - Does it make sense why we do something when we do it?
   - Are we comfortable finding the syntax for how to do something?
 - Heavily lean on your readings to guide you
-- Bonus Practices are very important for your exam!
+
 
 ![coffee schema](image.png)
