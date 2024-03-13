@@ -1,0 +1,2 @@
+FLASK_APP=west_app
+FLASK_DEBUG=True
