@@ -118,14 +118,16 @@ What can I add to accomplish this?
 ### Minimum Code needed
 ```SQL
 
--- Previous Code Here --
+-- Previous Code Above--
+
+-- need to add a breeds table
 CREATE TABLE
     breeds (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         breed VARCHAR(50)
     );
 
--- I now need to update my dogs table to include a breed column
+-- I now need to update my dogs table to include a breed_id column
 CREATE TABLE
     dogs (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -135,6 +137,7 @@ CREATE TABLE
         FOREIGN KEY (shelter_id) REFERENCES shelters (id), FOREIGN KEY (breed_id) REFERENCES breeds (id)
     );
 
+-- populate the breeds table
 INSERT INTO
     breeds
 VALUES
@@ -144,6 +147,7 @@ VALUES
     (4, 'Pug'),
     (5, 'Golden');
 
+-- populate the dogs table with breeds
 INSERT INTO
     dogs
 VALUES
@@ -173,7 +177,7 @@ Do I need to add any columns or tables?
 - Negative
 
 ### Schema
-- No Updates Neeeded
+- No Updates Needed
 
 
 ### Minimum Code needed

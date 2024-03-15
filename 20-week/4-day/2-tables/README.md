@@ -152,7 +152,7 @@ Do I need to add any columns or tables?
 - Negative
 
 ### Schema
-- No Updates Neeeded
+- No Updates Needed
 
 
 ### Minimum Code needed
