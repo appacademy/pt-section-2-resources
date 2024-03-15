@@ -6,10 +6,11 @@ CREATE TABLE debugger(
 );
 INSERT INTO debugger
 VALUES
-(1, '~~~~~~Phase 1~~~~~~~' || char(10) || ''),
-(2, '~~~~~~Phase 2~~~~~~~' || char(10) || ''),
-(3, '~~~~~~Phase 3~~~~~~~' || char(10) || ''),
-(4, '~~~~~~Phase 4~~~~~~~' || char(10) || '');
+(1, '' || char(10) || '~~~~~~Phase 1~~~~~~~' || char(10) || ''),
+(2, '' || char(10) || '~~~~~~Phase 2~~~~~~~' || char(10) || ''),
+(3, '' || char(10) || '~~~~~~Phase 3~~~~~~~' || char(10) || ''),
+(4, '' || char(10) || '~~~~~~Phase 4~~~~~~~' || char(10) || '');
+
 
 -------------------------------------------PHASE 1----------------------------------------------------------
 -- - I want to be able to find all shelters and see their location
