@@ -1,4 +1,4 @@
-# Creating Dog Shelter App
+# Dog Shelter App
 
 Requirements
 

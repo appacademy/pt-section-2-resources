@@ -1,4 +1,4 @@
-# Creating Dog Shelter App
+# Creating Our Dog Shelter App
 
 In this readme, I'm going to show an approach where I only add the minimum requirements necessary to pass a single phase.
 
