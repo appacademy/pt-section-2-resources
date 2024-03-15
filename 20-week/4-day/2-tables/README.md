@@ -81,7 +81,7 @@ DROP TABLE IF EXISTS dogs;
 -- I can always add more later.
 CREATE TABLE dogs(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name VARCHAR(50),
+    name VARCHAR(50), -- I'm including a name so that I don't have to refer to dogs by an ID in real life.
     shelter_id INTEGER,
     FOREIGN KEY (shelter_id) REFERENCES shelters(id)
 );
@@ -146,7 +146,7 @@ ON dogs.shelter_id = shelters.id;
 ```
 ## Phase 4
 
-**I want to be able to remove an entire breed of dog for a shelter incase I want the shelter to be only for a single breed**
+**I want to be able to remove an entire breed of dog for a shelter incase I don't want that breed at my shelter**
 
 Do I need to add any columns or tables?
 - Negative
