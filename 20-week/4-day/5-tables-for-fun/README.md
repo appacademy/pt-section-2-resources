@@ -13,7 +13,7 @@ There are 2 one-to-many relationships and a single many-to-many relationship in 
 
 ## Simplicity vs. Complexity
 
-Ultimately, this schema achieves the **same goals** as the example that uses 2 tables, but it is more difficult to maintain and keep track of all the pieces.
+Ultimately, this schema achieves the **same goals** as the example that uses 2 tables, but it can be more difficult to maintain and keep track of all the pieces.
 
 Before jumping straight to building a new table, ask yourself if the attribute could simply be another column on an existing table.
 
