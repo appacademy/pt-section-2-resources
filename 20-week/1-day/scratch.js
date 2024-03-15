@@ -3,4 +3,3 @@ let myDB = {
   posts: [{ content: "hello world" }, { content: "hello world" }],
 };
 
-let hello = "world"
