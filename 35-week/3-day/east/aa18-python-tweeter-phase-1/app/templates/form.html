@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form>
+    {{ form.csrf_token }}
+    <p>{{ form.tweet.label }}</p>{{ form.tweet }}
+    <p>{{ form.author.label }}</p>{{ form.author }}
+    {{ form.submit }}
+</form>
+{% endblock %}
