@@ -20,6 +20,7 @@ function createDB() {
     (err) => {
       if (err) {
         console.error(err.message);
+        next(err)
       } else {
         console.log("Connected to the SQLite database.");
         runMigrations();
@@ -44,6 +45,7 @@ function runSeeders() {
             db.run(statement, (err) => {
               if (err) {
                 console.error("Error executing SQL: ", err);
+                next(err)
               }
             });
           }
@@ -61,6 +63,7 @@ function runMigrations() {
     fs.readFile(sqlFilePath, "utf8", (err, data) => {
       if (err) {
         console.error("Error reading SQL file", err);
+        next(err)
         return;
       }
       db.serialize(() => {
@@ -70,6 +73,7 @@ function runMigrations() {
             db.run(statement, (err) => {
               if (err) {
                 console.error("Error executing SQL: ", err);
+                next(err)
               }
             });
           }
