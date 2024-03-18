@@ -82,10 +82,10 @@ Click on the tab that corresponds with the problem you're working on to execute 
 All code will be written in the "db" directory.  You should not need to modify any files outside of the db directory.  The Express server doesn't always parse SQL comments correctly, so ensure you remove any commented out code from your .sql files.
 
 ### Creating Tables
-Your tables should be created in `migrations.sql`
+Your tables should be created in `migrations.sql`.
 
 ### Inserting Data
-Your inserts should be added to `seeders.sql`
+Your inserts should be added to `seeders.sql`.
 
 ### Writing Queries
 The queries folder `./db/queries` contains a file for each of the 4 scenarios we're preparing for; you should write your sql statements in these files.
