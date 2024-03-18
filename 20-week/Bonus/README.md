@@ -17,7 +17,7 @@
 
 ### Below is what a page will look in this app, using the dog shelter project in this example.
 
-![Dog Shelters Schema](image-4.png)
+![Dog Shelters Schema](./public/images/image-4.png)
 
 
 ## Intro
@@ -96,9 +96,9 @@ Make sure to add `PRAGMA foreign_keys = ON;` to the top of the migrations file.
 ### Examples
 Look at the examples folder (./db/examples) to see examples of what your SQL files should look like.
 
-![alt text](image-3.png)
+![alt text](./public/images/image-3.png)
 
-![alt text](image-2.png)
+![alt text](./public/images/image-2.png)
 
 ## Creating the DB / Handeling Errors / Resetting your DB
 Every time you reset your server the migrations and seeder files will run, effectively resetting your DB.
