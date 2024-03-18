@@ -4,16 +4,16 @@
 
 - This is an optional practice intended to give you additional SQL practice for your assessment on 3/25.  This project is supposed to be somewhat fun and lighthearted.
 
-- Moreover, this project is intentially being created with Express to let you refamiliarize yourself with express before we dive right back into it for Week 21 and Week 22.
+- Moreover, this project is intentially being created with Express to let you refamiliarize yourself with Express before we dive right back into it for Week 21 and Week 22.
 
 **There aren't Test Specs**
 
-- You will assess if you've written your sql correctly by clicking through the app on localhost and seeing if your sql produces results that match what is specified in the project requirements.
+- You will assess if you've written your SQL correctly by clicking through the app on localhost and seeing if your SQL produces results that match what is specified in the project requirements.
 - Feel free to reach out to me if you're unsure about your output.
 
 **Using Express**
 
-- If the integration with express is throwing you off, you can simply run through the projects requirements creating a db and .sql files in a blank folder on your computer.
+- If the integration with Express is throwing you off, you can simply run through the projects requirements creating a db and .sql files in a blank folder on your computer.
 
 ### Below is what a page will look in this app, using the dog shelter project in this example.
 
@@ -36,7 +36,7 @@ Alright so let's move to the next section and discuss what we'll need to make th
 
 ## Requirements
 
-1. We'll want to be able to have lots of different types of fruits avaible in our baskets: Oranges, Strawberries, Watermellon, Bananas, and maybe even Tomatos.
+1. We'll want to be able to have lots of different types of fruits avaible in our baskets: Oranges, Strawberries, Watermelon, Bananas, and maybe even Tomatos.
 2. We'll want to be able to know how fresh our fruit is by marking down how many days old it is when we take inventory (e.g., '1' day old or '2' days old).
 3. We'll want to also be able to know what type of flavor the fruit has: is it sour or is it sweet; maybe something inbetween?
 4. We'll also want to be able to have customized baskets like a sour fruit basket or maybe even a veggie-fruit basket.
@@ -73,7 +73,9 @@ Clone this repo and install the dependencies.
 You'll be able to run the server with nodemon:
 - `npm run dev`
 
-The server contains existing routes that will display the results of your quries in the browser.  The server also handles the creation of the database.  You will just need to write the SQL.
+The server contains existing routes that will display the results of your quries in the browser.  The server also handles the creation of the database.  **You will just need to write the SQL.  You do not need to modify any Express**.
+
+Click on the tab that corresponds with the problem you're working on to execute the SQL.  You should see a notification print in your terminal indicating which file was executed.
 
 ## Writing Your Code
 
@@ -86,7 +88,7 @@ Your tables should be created in `migrations.sql`
 Your inserts should be added to `seeders.sql`
 
 ### Writing Queries
-The queries folder (./db/queries) contains a file for each of the 4 scenarios we're preparing for; you should write your sql statements in these files.
+The queries folder `./db/queries` contains a file for each of the 4 scenarios we're preparing for; you should write your sql statements in these files.
 
 ### If you're using foreign keys
 Make sure to add `PRAGMA foreign_keys = ON;` to the top of the migrations file.
