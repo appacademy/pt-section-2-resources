@@ -1,5 +1,7 @@
 # You thought you were done with SQL? 😂
 
+[SQL Visualization](https://dataschool.com/how-to-teach-people-sql/inner-join-animated/)
+
 ## Efficiency
 
 ### What makes a database less efficient?
