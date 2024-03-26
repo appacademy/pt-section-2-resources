@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>WELCOME TO JUNE 23 PST</h1>
+    <form>
+        {{ form.csrf_token }}
+        {{ form.name.label }} {{ form.name }}
+        {{ form.email.label }} {{ form.email }}
+        {{ form.age.label }} {{ form.age }}
+        {{ form.issue.label }} {{ form.issue }}
+        {{ form.submit }}
+    </form>
+</body>
+</html>
