@@ -1,4 +1,4 @@
-# You thought you were done with SQL? 😂
+# SQL Efficiency and Indexes
 
 [SQL Visualization](https://dataschool.com/how-to-teach-people-sql/inner-join-animated/)
 
