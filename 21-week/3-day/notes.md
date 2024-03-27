@@ -16,7 +16,7 @@
 
 ---
 
-##  Database Model 
+##  Database Model
 
 A 'model' for the data in our tables
 
@@ -414,7 +414,7 @@ User.init(
       type: DataTypes.STRING,
       validate: {
         isNotMyEmail(value) {
-          if (value === "zbrown@appacademy.io") {
+          if (value === "wduffy@appacademy.io") {
             throw new Error("Hey wait that's my email!");
           }
         },
