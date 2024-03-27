@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "dotenv nodemon app.js",
+    "start": "dotenv node app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "dotenv-cli": "^7.4.1",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
