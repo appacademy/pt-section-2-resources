@@ -5,6 +5,8 @@ const path = require("path");
 module.exports = {
     dbSetUp: createDB,
   };
+
+  
 function createDB() {
     console.log("\nCreating the DB..");
     return (db = new sqlite3.Database(

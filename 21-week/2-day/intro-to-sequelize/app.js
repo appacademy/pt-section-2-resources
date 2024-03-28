@@ -6,6 +6,8 @@ let db = dbSetUp();
 
 const colorRouter = require("./routes/colors");
 app.use(express.json());
+
+
 app.use("/colors", colorRouter);
 
 
@@ -13,7 +15,6 @@ app.use("/colors", colorRouter);
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
-
 
 
 

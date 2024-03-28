@@ -7,6 +7,7 @@
     -- Your code here
 
 -- Paste your results below (as a comment):
+.timer on
 SELECT * FROM cats
 JOIN cat_toys ON (cat_toys.cat_id = cats.id)
 JOIN toys ON (cat_toys.toy_id = toys.id)

@@ -8,8 +8,10 @@ const colorRouter = express.Router();
 
 const Color = require("../models/colors")
 
-colorRouter.get("/", (req, res) => {
 
+
+colorRouter.get("/", (req, res) => {
+  // console.log("COLOR: ", Color)
 
   let sql = Color.getAll()
 
@@ -19,12 +21,14 @@ colorRouter.get("/", (req, res) => {
   });
 });
 
+
+
 colorRouter.get("/:id", (req, res) => {
-
-  // const id = req.params.id
-const {id} = req.params
-
-  let sql = Color.getById(id)
+  // let {id} = req.params
+  let id = req.params.id
+// let reqBody = req.body
+// console.log("reqBody", reqBody)
+let sql = Color.getById(id)
 
   const params = [];
   db.all(sql, params, (err, rows) => {

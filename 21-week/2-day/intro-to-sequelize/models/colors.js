@@ -7,10 +7,8 @@
 
 
 const Color = {
-
-  getAll: () => "SELECT * FROM colors",
-  getById: (id) => `SELECT * FROM colors where id = ${id};`
-
+  getAll: () => "SELECT * FROM colors;",
+  getById: (id) => `SELECT * FROM colors WHERE id = ${id}`
 };
 
 module.exports = Color;
