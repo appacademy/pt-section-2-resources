@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to June 23 EST!!!</h1>
+    <form>
+        {{ form.csrf_token }}
+        <h2>Contact Us!</h2>
+        {{ form.name.label }} {{ form.name }}
+        {{ form.email.label }} {{ form.email }}
+        {{ form.age.label }} {{ form.age }}
+        {{ form.issue.label }} {{ form.issue }}
+        {{ form.submit }}
+    </form>
+</body>
+</html>
