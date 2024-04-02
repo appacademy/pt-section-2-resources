@@ -1,0 +1,32 @@
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
+import { loadArticlesThunk } from '../../store/articleReducer';
+
+const ArticleList = () => {
+    const dispatch = useDispatch();
+    const articles = useSelector((state) =>
+        Object.values(state.articleState.entries)
+    );
+
+    console.log(articles);
+
+    useEffect(() => {
+        dispatch(loadArticlesThunk());
+    }, [dispatch]);
+
+    return (
+        <div>
+            <h1>Article List</h1>
+            <ol>
+                {articles.map(({ id, title }) => (
+                    <li key={id}>
+                        <NavLink to={`${id}`}>{title}</NavLink>
+                    </li>
+                ))}
+            </ol>
+        </div>
+    );
+};
+
+export default ArticleList;
