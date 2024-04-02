@@ -1,6 +1,7 @@
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import fruitReducer from './fruitReducer';
 import articleReducer from './articleReducer';
+import thunk from 'redux-thunk';
 
 /*
 This is the most important part of this file. You will add your reducers here to
@@ -8,8 +9,8 @@ work with your components. `combineReducers` turns all the reducer functions
 into one big reducer function.
 */
 const rootReducer = combineReducers({
-  fruitState: fruitReducer,
-  articleState: articleReducer
+    fruitState: fruitReducer,
+    articleState: articleReducer,
 });
 
 /*
@@ -29,11 +30,16 @@ provides access to environment variables through `import.meta.env`.
 window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ along with the Chrome extension for
 Redux DevTools will set up your Redux DevTools in the browser.
 */
-if (import.meta.env.MODE !== "production") {
-  const logger = (await import("redux-logger")).default;
-  const composeEnhancers =
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-  enhancer = composeEnhancers(applyMiddleware(logger));
+if (import.meta.env.MODE !== 'production') {
+    const logger = (await import('redux-logger')).default;
+    const composeEnhancers =
+        typeof window === 'object' &&
+        window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+            ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({ trace: true })
+            : compose;
+    enhancer = composeEnhancers(applyMiddleware(thunk, logger));
+} else {
+    enhancer = applyMiddleware(thunk);
 }
 
 /*
@@ -46,7 +52,7 @@ the Redux store access to the full application.
 `enhancer`: see above.
 */
 const configureStore = (preloadedState) => {
-  return createStore(rootReducer, preloadedState, enhancer);
+    return createStore(rootReducer, preloadedState, enhancer);
 };
 
 export default configureStore;
