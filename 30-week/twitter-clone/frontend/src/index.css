@@ -1,0 +1,17 @@
+/* TODO: Add sitewide styles */
+
+.tweet-button {
+    background-color: #1ea1f2;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 15px;
+    color: white;
+}
+
+.tweet-button:disabled {
+    background-color: grey;
+}
+
+.tweet-input {
+    padding: 10px;
+}
