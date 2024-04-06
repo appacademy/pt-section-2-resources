@@ -1,5 +1,17 @@
 /* TODO: Add sitewide styles */
 
+.box-red {
+    outline: solid 1px red;
+}
+
+.box-blue {
+    outline: solid 1px blue;
+}
+
+.box-green {
+    outline: solid 1px green;
+}
+
 .tweet-button {
     background-color: #1ea1f2;
     border: none;

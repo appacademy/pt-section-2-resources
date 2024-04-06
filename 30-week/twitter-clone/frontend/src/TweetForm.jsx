@@ -1,26 +1,33 @@
-import './index.css';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { postTweetThunk } from './store/tweet';
+import { PacmanLoader, RingLoader, RotateLoader } from 'react-spinners';
 
 export default function TweetForm() {
     const dispatch = useDispatch();
     const [message, setMessage] = useState('');
+    const [showLoading, setShowLoading] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const tweetData = {
-            message,
-        };
+        setShowLoading(true);
 
-        const errorCheck = await dispatch(postTweetThunk(tweetData));
+        setTimeout(async () => {
+            const tweetData = {
+                message,
+            };
 
-        if (errorCheck) {
-            return; // handle errors here
-        }
+            const errorCheck = await dispatch(postTweetThunk(tweetData));
 
-        setMessage('');
+            if (errorCheck) {
+                return; // handle errors here
+            }
+
+            setMessage('');
+            setShowLoading(false);
+        }, 3000);
+
         return;
     };
 
@@ -36,6 +43,14 @@ export default function TweetForm() {
             <button disabled={!message.length} className="tweet-button">
                 Tweet
             </button>
+
+            {showLoading && (
+                <>
+                    <PacmanLoader color="#36d7b7" />
+                    <RingLoader color="red" />
+                    <RotateLoader color="green" />
+                </>
+            )}
         </form>
     );
 }

@@ -23,12 +23,14 @@ const TweetList = () => {
     }, [dispatch]);
 
     return (
-        <>
+        <div className="box-blue">
             <h1>Tweet List</h1>
             {tweetList?.map(({ id, message }) => (
-                <p key={id}>{message}</p>
+                <p className="box-red" key={id}>
+                    {message}
+                </p>
             ))}
-        </>
+        </div>
     );
 };
 
