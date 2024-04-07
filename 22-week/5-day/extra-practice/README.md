@@ -41,4 +41,4 @@ Create a route to handle GET requests at `/dogs/breeds`.
 
 This route should get all of the dogs, and eagerly load their breeds.
 
-The response should return all of the dogs with their associated breeds.  The results should be ordered alphabetically by the column for the dog's name.
+The response should return all of the dogs with their associated breeds.  The results should be ordered alphabetically by the column that represents the dog's name.
