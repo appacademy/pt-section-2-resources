@@ -10,12 +10,14 @@ module.exports = {
       },
       breedId: {
         type: Sequelize.INTEGER,
+        allowNull: false,
         references: {
           model: "Breeds",
         },
       },
       dogId: {
         type: Sequelize.INTEGER,
+        allowNull: false,
         references: {
           model: "Dogs",
         },
@@ -26,10 +28,12 @@ module.exports = {
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE,
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
     });
   },
