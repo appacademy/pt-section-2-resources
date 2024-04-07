@@ -14,3 +14,6 @@
 - Know how to handle POST requests that will create a Child entity given an identifier for the Parent.
 - Know how to eagerly load an entity with its' associations.
 - Know how to Order data when querying the database.
+
+## Validations
+- References your custom validation implementations throughout this week.  Make note of custom validations where we worked with strings.
