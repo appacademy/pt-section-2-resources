@@ -1,5 +1,9 @@
 # Assessment Prep
 
+This is an optional practice intended to help prepare you for Monday.
+
+You will have 120 minutes on Monday.  See if you're able to complete this practice in 60-70 minutes. If so, you're in great shape!
+
 ## Step 1
 You are given working models and migrations for Owners, Dogs, and Breeds.
 
@@ -17,7 +21,7 @@ The route should be at the path below:
 
 `POST /owners/:ownerId`
 
-The body of the request should be the following format:
+The body of the request should be in the following format:
 
 `{"petName": "Fido"}`
 
@@ -37,4 +41,4 @@ Create a route to handle GET requests at `/dogs/breeds`.
 
 This route should get all of the dogs, and eagerly load their breeds.
 
-The response should return all of the dogs with their associated breeds.  The results should be ordered alphabetically by the dog's name.
+The response should return all of the dogs with their associated breeds.  The results should be ordered alphabetically by the column for the dog's name.
