@@ -19,7 +19,7 @@ After creating the associations, create a route handler that will allow owners t
 
 The route should be at the path below:
 
-`POST /owners/:ownerId`
+`POST /owners/:ownerName`
 
 The body of the request should be in the following format:
 
