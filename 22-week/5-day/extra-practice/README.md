@@ -7,7 +7,7 @@ You will have 120 minutes on Monday.  See if you're able to complete this practi
 ## Step 1
 You are given working models and migrations for Owners, Dogs, and Breeds.
 
-Your task is to create any necessary models and migrations so that the schema reflects the diagram below.
+Your task is to create any necessary models and migrations so that your database reflects the schema in the diagram below.
 
 You may not modify any of the _existing_ migration files.
 
