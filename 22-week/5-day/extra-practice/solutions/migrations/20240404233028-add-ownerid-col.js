@@ -11,6 +11,7 @@ module.exports = {
     await queryInterface.addColumn("Dogs", "ownerId", {
       type: Sequelize.INTEGER,
       references: { model: "Owners" },
+      onDelete: 'CASCADE'
     });
   },
 
