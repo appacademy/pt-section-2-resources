@@ -1,10 +1,10 @@
 # Assessment on Monday
 
 ## Models & Migrations
-- Know how to generate a model and migration based on criteria specified in a reading.
+- Know how to generate a model and migration based on criteria specified in a reading.  Use the test's "data" file to assist you.
 
 ## Seeders
-- Know how to read a model, migration, and data file to determine valid seed data.
+- Know how to read a model and migration to determine valid seed data.
 
 ## Associations and Route Handlers
 - Creating Models and Migrations for a Many to Many
