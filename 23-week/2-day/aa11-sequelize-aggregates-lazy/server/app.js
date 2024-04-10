@@ -27,14 +27,18 @@ app.get('/toys-summary', async (req, res, next) => {
         Set it to a variable called `count`.
     */
 
-let count = 0
+// let count = 0
     const toys = await Toy.findAll()
 
     toys.forEach(toy =>{
         count++
     })
+
+
+
+
 // Executed (default): SELECT `id`, `name`, `color`, `price`, `createdAt`, `updatedAt` FROM `Toys` AS `Toy`; Elapsed time: 72ms
-    // const count = await Toy.count();
+    const count = await Toy.count();
 
 
     /*
@@ -81,10 +85,17 @@ app.get('/cats/:catId', async (req, res, next) => {
     */
     // const cat = {};
 
+    // const cat = await Cat.findByPk(catId, {
+    //     include: ["Toys"]
+    // })
     const cat = await Cat.findByPk(catId)
+    // const cat = await Cat.findAll()
+    // const toys = await Toy.findAll({where: {catId:catId}})
+    // const toys = cat.Toys;
  console.log(cat.toJSON())
+//  console.log(cat)
 
-    const toys = cat.Toys;
+    // console.log(toys)
 
     /*
         STEP 2B: Calculate the total amount of toys that the cat is
@@ -106,9 +117,7 @@ app.get('/cats/:catId', async (req, res, next) => {
     const toyAvgPrice = 0
 
     res.json({
-        toyCount,
-        toyTotalPrice,
-        toyAvgPrice,
+
         // STEP 3: Observe the difference between `...cat` and `...cat.toJSON()`
         ...cat.toJSON(),
     });
@@ -161,7 +170,7 @@ app.get('/', (req, res) => {
 
 // Set port and listen for incoming requests - DO NOT MODIFY
 if (require.main === module) {
-    const port = 8000;
+    const port = 8050;
     app.listen(port, () => console.log('Server is listening on port', port));
 } else {
     module.exports = app;
