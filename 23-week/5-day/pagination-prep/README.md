@@ -6,7 +6,7 @@ This practice is to help prepare you for the upcoming assessment on 4/22.
 ## Setup
 We're working in the W23 Day-5 "pagination-practice" folder.  The models/migrations/seeders are already complete.
 
-1. npm install
+1. Run: `npm install`
 2. Create your `.env`
 3. Run your migrations
 4. Run your seeders
