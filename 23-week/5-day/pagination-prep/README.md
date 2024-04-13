@@ -8,9 +8,9 @@ We're working in the W23 Day-5 "pagination-practice" folder.  The models/migrati
 
 1. npm install
 2. Create your `.env`
-2. Run your migrations
-3. Run your seeders
-4. Check to make sure your DB is populated
+3. Run your migrations
+4. Run your seeders
+5. Check to make sure your DB is populated
 
 ## Exercise
 
