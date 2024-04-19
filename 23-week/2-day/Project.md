@@ -9,12 +9,12 @@
 
 
 ## What You'll Be Doing/Some Expectations
-Creating Sequelize Models/Migrations & validations
-Creating Express API Routes
-Sending requests with Postman & returning the appropriate response
-Planning and efficient time management
-Asking SWE-level questions
-Proper git workflow and repository management
+- Creating Sequelize Models/Migrations & validations
+- Creating Express API Routes
+- Sending requests with Postman & returning the appropriate response
+- Planning and efficient time management
+- Asking SWE-level questions
+- Proper git workflow and repository management
 
 ## Some Other Tips
 

@@ -156,7 +156,7 @@ user's information.
 
 * Require Authentication: false
 * Request
-  * Method: ?
+  * Method: "hello world"
   * URL: ?
   * Headers:
     * Content-Type: application/json
