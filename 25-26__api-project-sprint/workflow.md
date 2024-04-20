@@ -12,6 +12,6 @@ Below is a simplified workflow strategy for developing your applicaiton:
 
 5. Move to the next feature
 
-Note, you could modularize every mode, migration, and seeder.  Essentially building all of your DB tables, and having them seeded.
+Note, you could modularize every model, migration, and seeder.  Essentially, building all of your DB tables, and having them seeded.
 
-After the db tables are created and seeded on Render, you could follow the 5 steps above for routes for each feature. 
+After the db tables are created and seeded on Render, you could follow the 5 steps above for routes for each feature.
