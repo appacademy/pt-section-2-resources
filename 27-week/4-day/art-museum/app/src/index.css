@@ -1,0 +1,73 @@
+/* TODO: Add sitewide styles */
+#root,
+html,
+body {
+	background-color: rgb(44, 44, 44);
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	color: rgb(174, 174, 174);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-ctn {
+	display: flex;
+}
+
+.main-ctn {
+	padding-left: 15px;
+}
+
+nav {
+	width: 300px;
+	color: white;
+	padding: 0 15px;
+	height: 100vh;
+	border-right: 2px solid rgb(134, 134, 134);
+}
+
+nav ul li {
+	margin-bottom: 7px;
+	text-decoration: none;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+.active {
+	text-decoration: underline;
+	color: rgb(164, 164, 164);
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav a {
+	color: rgb(111, 111, 111);
+	font-weight: 600;
+}
+
+.image-tile {
+	height: 300px;
+	width: 300px;
+	object-fit: contain;
+}
+
+.art-ctn {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+
+.art-card {
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(77, 77, 77);
+	height: 300px;
+	width: 300px;
+}
