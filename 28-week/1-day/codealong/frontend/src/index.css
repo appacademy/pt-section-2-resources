@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(56, 56, 56);
+	color: white;
+	font-family: sans-serif;
+}
+
+main {
+	height: calc(100vh - 100px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,25 @@
+nav {
+	height: 100px;
+	background-color: rgb(39, 39, 39);
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	width: 300px;
+	padding-right: 50px;
+	font-size: 46px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+.active {
+	text-decoration: underline;
+}
