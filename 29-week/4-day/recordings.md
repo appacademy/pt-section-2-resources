@@ -14,4 +14,12 @@ Passcode:
 
 ## PST
 
-Link / passcode will be added when available
+Link:
+
+https://us02web.zoom.us/rec/share/T2-EYdwH4NeKFcaHoX3Mtm9EpMZZIwWLmkbXTcYPHh001iT-dTNxMa_G2_Nj7Uo9.35embnw6lO_F76Sy
+
+Passcode:
+
+```
+SVM2@+L%
+```
