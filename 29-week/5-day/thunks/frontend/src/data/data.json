@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "replyId": null,
+    "body": "This is my first tweet!!!"
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "replyId": 1,
+    "body": "Me too!!"
+  },
+  {
+    "id": 3,
+    "userId": 1,
+    "replyId": null,
+    "body": "How does this thing even work??"
+  },
+  {
+    "id": 4,
+    "userId": 3,
+    "replyId": null,
+    "body": "Low key this is awesome"
+  }
+]
